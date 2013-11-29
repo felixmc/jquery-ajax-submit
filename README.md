@@ -26,13 +26,15 @@ Overwrite the URL that the form is submitted to, to be used for the ajax request
 ### data
 Object used to add additional parameters to the form submission or overwrite the ones from the form.
 
-_**Html**_  
+_**Html**_   
+
     <form method="post" action="myForm_parse.php" id="myForm">
         <input type="text" name="myField" />
         <input type="submit" />
     </form>
 
 _**Js**_   
+
     $("#myForm").ajaxSubmit({ data: { myField: "new value", additionalField: "some value" } });
 
 ### success
